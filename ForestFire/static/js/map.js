@@ -21,7 +21,7 @@ function filterBy(start_date, end_date) {
 map.on('load', function () {
 
     d3.json(
-        '../static/json/created_data.json',
+        '../static/json/created_data_abridged.json',
         function (err, data) {
             if (err) throw err;
 
