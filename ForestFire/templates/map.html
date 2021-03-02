@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="container container-fluid" style="padding-top: 200px;">
+    <div id="map" ></div>
+
+<div class="map-overlay top">
+<div class="map-overlay-inner">
+    <h2>Forest Fire Distribution</h2>
+     <label for="amount">Date range:</label>
+    <input type="text" id="amount" style="border: 0; font-weight: bold;" size="100"/>
+    <div class="slider-range" id="slider"></div>
+</div>
+<!-- <div class="map-overlay-inner">
+    <div id="legend" class="legend">
+    <div class="bar"></div>
+    <div>Magnitude (m)</div>
+</div> -->
+</div>
+
+</div>
+</div>
+{% endblock%}
