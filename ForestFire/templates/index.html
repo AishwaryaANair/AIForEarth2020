@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,39 +16,39 @@
 	<link rel="shortcut icon" href="images/favicon.png">
 
 	<!-- bootstrap css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
 	<!-- reset css -->
-	<link href="css/common.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
+	<link href="{% static 'css/common.css' %}" rel="stylesheet">
+	<link rel="stylesheet" href="{% static 'css/normalize.css' %}">
 
 	<!-- venobox css -->
-	<link href="css/venobox.css" rel="stylesheet">
+	<link href="{% static 'css/venobox.css' %}" rel="stylesheet">
 
 	<!-- font css -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,500i,700" rel="stylesheet">
-	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
 
 	<!-- Flickity css -->
-	<link rel="stylesheet" href="css/flickity.min.css" media="screen">
+	<link rel="stylesheet" href="{% static 'css/flickity.min.css' %}" media="screen">
 
 	<!-- nav css -->
-	<link href="css/navigation.css" rel="stylesheet">
+	<link href="{% static 'css/navigation.css' %}" rel="stylesheet">
 
 	<!-- style css -->
-	<link href="style.css" rel="stylesheet">
+	<link href="{% static 'style.css' %}" rel="stylesheet">
 
 	<!-- theme css -->
-	<link href="css/theme.css" rel="stylesheet">
+	<link href="{% static 'css/theme.css' %}" rel="stylesheet">
 
 	<!-- responsive css -->
-	<link href="css/responsive.css" rel="stylesheet">
+	<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
 
 	<!-- revolution slider sheets -->
-	<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'revolution/css/settings.css' %}">
 
 	<!-- revolution navigation styles -->
-	<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'revolution/css/navigation.css' %}">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -154,7 +155,7 @@
                         data-title="Intro"
                         data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="images/Wildfire.jpg"  alt=""  
+                    <img src="{% static 'images/Wildfire.jpg' %}"  alt=""  
                        data-bgposition="center center" 
                        data-bgfit="cover"
                        data-bgrepeat="no-repeat"
@@ -253,7 +254,7 @@
                         data-saveperformance="off" 
                         data-title="Intro"
                         data-description="">
-                        <img src="images/slider_v2_01.jpg"
+                        <img src="{% static 'images/slider_v2_01.jpg' %}"
                         alt="" title="bg" 
                         width="1920"
                         height="100%" 
@@ -311,7 +312,7 @@
                         data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
                         data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                         style="z-index: 8;border-width:0px;">
-                        <img src="images/hero-icon.png" alt="" data-no-retina>
+                        <img src="{% static 'images/hero-icon.png' %}" alt="" data-no-retina>
                     </div>
                     <div class="tp-caption  fs__13 tp-resizeme"
                         id="slide-2-layer-5"
@@ -363,13 +364,15 @@
 				<div class="row">
 					<div class="container__mid">
 						<div class="col-md-6 col-md-push-6 horizon" data-animate-in="transY:-150px;duration:1000ms;">
-							<img src="images/Ipad1.png" alt="ipad">
+							<!--<img src="images/Ipad1.png" alt="ipad">-->
 						</div>
 						<div class="col-md-5 col-md-pull-7">
 							<div class="about_title text-left horizon" data-animate-in="transY:150px;duration:1000ms;">
-								<h2>Award Winning</h2>
-								<h3>Digital Agency with Enterprise Solutions</h3>
-								<p>We are in the business of digital transformation. We help our clients see what they cannot. From Apple Commercials and Billboards to Gartner's Magic Quadrant and Webby Award winning mobile apps, our work sees no boundaries.</p>
+								<h2>Are you prepared?</h2>
+								<h3>We saw that coming! </h3>
+								<p> Drought, likely influenced by climate, is one of the largest factors affecting the spread of wildfires
+						              . Climate change has helped spike the size and number of wildfires,
+									as fire seasons have grown longer over the last couple of decades. We show you the disaster coming your way. We help you check wildfire danger classification for your area.</p>
 								
 							</div>
 						</div>
@@ -511,7 +514,7 @@
 										<h5>Clean Design</h5>
 									</li>
 									<li>
-										<p>Unpacked now declared put you confined daughter improved. </p>
+									<!--	<p>Unpacked now declared put you confined daughter improved. </p>-->
 									</li>
 								</ul>
 								<!-- feaures block end -->
@@ -522,13 +525,13 @@
 										<h5>Free Update</h5>
 									</li>
 									<li>
-										<p>Unpacked now declared put you confined daughter improved. </p>
+										<p></p>
 									</li>
 								</ul>
 								<!-- feaures block end -->
 							</div>
 							<div class="col-md-8">
-								<img class="v2__mockup" src="images/devices.png" alt="">
+								<img class="v2__mockup" src="{% static 'images/devices.png' %}" alt="">
 							</div>
 							<div class="col-md-3">
 								<ul class="feaures__block">
@@ -538,7 +541,7 @@
 										<h5>Super Responsive</h5>
 									</li>
 									<li>
-										<p>Unpacked now declared put you confined daughter improved. </p>
+										<p> </p>
 									</li>
 								</ul>
 								<!-- feaures block end -->
@@ -549,7 +552,7 @@
 										<h5>Dedicated Support</h5>
 									</li>
 									<li>
-										<p>Unpacked now declared put you confined daughter improved. </p>
+										<p> </p>
 									</li>
 								</ul>
 								<!-- feaures block end -->
@@ -652,16 +655,16 @@
 						<div class="col-md-3 col-sm-12">
 							<div class="team_intro pb__sm__40 horizon" data-animate-in="preset:slideInUpShort;duration:1000ms;">
 								<h3>We are dedicated team, we work globaly.</h3>
-								<p>Unpacked now declared put you confined daughter improved. Celebrated imprudence few interested especially reasonable off one.</p>
+								<!--<p>Unpacked now declared put you confined daughter improved. Celebrated imprudence few interested especially reasonable off one.</p>-->
 							</div>
 						</div>
 						<div class="col-md-3 col-sm-4">
 							<div class="v2__team__mamber">
 								<div class="v2__team__img">
-									<img src="images/team1.png" alt="img">
+									<img src="{% static 'images/aishwarya.png' %}" alt="img">
 									<div class="v2__team__content">
-										<h4>Faridul Haque</h4>
-										<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+										<h4>Aishwarya Nair</h4>
+										<p>BE- IT D20</p>
 										<div class="team__social">
 											<a href="#"><i class="fa fa-facebook"></i></a>
 											<a href="#"><i class="fa fa-twitter"></i></a>
@@ -676,10 +679,10 @@
 						<div class="col-md-3 col-sm-4">
 							<div class="v2__team__mamber">
 								<div class="v2__team__img">
-									<img src="images/team2.png" alt="img">
+									<img src="{% static 'images/saily2.png' %}" alt="img">
 									<div class="v2__team__content">
-										<h4>Sumaiya Shampa</h4>
-										<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+										<h4>Saiy Natekar</h4>
+										<p>BE-IT D20 </p>
 										<div class="team__social">
 											<a href="#"><i class="fa fa-facebook"></i></a>
 											<a href="#"><i class="fa fa-twitter"></i></a>
@@ -694,10 +697,10 @@
 						<div class="col-md-3 col-sm-4">
 							<div class="v2__team__mamber">
 								<div class="v2__team__img">
-									<img src="images/team3.png" alt="img">
+									<img src="{% static 'images/shivani1.png' %}" alt="img">
 									<div class="v2__team__content">
-										<h4>Farhan Rizvi</h4>
-										<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+										<h4>Shivani Patil</h4>
+										<p>BE-IT D20</p>
 										<div class="team__social">
 											<a href="#"><i class="fa fa-facebook"></i></a>
 											<a href="#"><i class="fa fa-twitter"></i></a>
@@ -727,13 +730,13 @@
 							<div class="col-md-5 col-sm-6">
 								<div class="prg-txt">Back-end Development</div>
 								<div class="progress">
-									<div class="progress-bar blue horizon" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;" data-animate-in="transX:-400;duration:1000ms;delay:200ms;easing:swing;">
-										<span>85%</span>
+									<div class="progress-bar blue horizon" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;" data-animate-in="transX:-400;duration:1000ms;delay:200ms;easing:swing;">
+										<span>80%</span>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="container__mid flex__sm__none">
+						<!--<div class="container__mid flex__sm__none">
 							<div class="col-md-5 col-md-offset-3 col-sm-6">
 								<div class="prg-txt">Business Development</div>
 								<div class="progress">
@@ -741,16 +744,16 @@
 										<span>80%</span>
 									</div>
 								</div>
-							</div>
+							</div>-->
 							<!--item end-->
-							<div class="col-md-5 col-sm-6">
+							<!--<div class="col-md-5 col-sm-6">
 								<div class="prg-txt">Communication</div>
 								<div class="progress">
 									<div class="progress-bar orange horizon" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 95%;" data-animate-in="transX:-400;duration:1000ms;delay:200ms;easing:swing;">
 										<span>95%</span>
 									</div>
 								</div>
-							</div>
+							</div>-->
 						</div>
 					</div>
 				</div>
@@ -759,12 +762,12 @@
 		<!-- ===========Progress Bar Start ============ -->
 
 		<!-- ===========Image Content Block Start============ -->
-		<section class="image__content">
+		<!-- <section class="image__content">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
 						<div class="side__img mt__30 mt__sm__0">
-							<img src="images/iMac.png" alt="img">
+							<img src="{% static 'images/iMac.png' %}" alt="img">
 						</div>
 					</div>
 					<div class="col-md-6 col-md-offset-2 col-sm-9 col-sm-offset-3">
@@ -788,12 +791,12 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- ===========Image Content Block End============ -->
 
 
 		<!-- ===========Testimonial Start============ -->
-		<section class="testimonial pt__90 pb__100 pt__sm__70" id="testimonial">
+	<!--	<section class="testimonial pt__90 pb__100 pt__sm__70" id="testimonial">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -809,39 +812,43 @@
 							<img class="aligncenter mt__30 mb__20 " src="images/testimonial-1.jpg" alt="img">
 							<h4 class="pb__10">Damon Mobarak</h4>
 							<span>CTO, Pixitives</span>
-						</div>
+						</div>-->
 						<!-- single item end -->
-						<div class="text-center carousel-cell">
+					<!--	<div class="text-center carousel-cell">
 							<i class="fa fa-quote-left pb__30"></i>
 							<p>Nesciunt harum dolor quae reiciendis commodi, unde soluta officia illo ab, ullam odit aliquid odio explicabo sapiente. Quos nam hic nesciunt, laudantium consectetur est maiores deleniti, ratione itaque, eveniet veniam voluptate alias quasi! Eveniet veniam quidem, quis vitae perferendis recusandae, dolore iste amet atque officia sed?voluptate alias quasi! </p>
 							<img class="aligncenter mt__30 mb__20 " src="images/testimonial-2.jpg" alt="img">
 							<h4 class="pb__10">Justine Moyna</h4>
 							<span>CTO, Pixitives</span>
-						</div>
+						</div> -->
 						<!-- single item end -->
-						<div class="text-center carousel-cell">
+					<!--	<div class="text-center carousel-cell">
 							<i class="fa fa-quote-left pb__30"></i>
 							<p>Consectetur adipisicing elit. Nulla eaque ullam labore quis consequuntur harum culpa voluptate illum. Commodi sint et veniam nisi sapiente sed. Illum natus nostrum deleniti labore voluptates sequi, ipsam libero quia.</p>
 							<img class="aligncenter mt__30 mb__20 " src="images/testimonial-3.jpg" alt="img">
 							<h4 class="pb__10">Farfar Han</h4>
 							<span>CTO, Pixitives</span>
-						</div>
+						</div> -->
 						<!-- single item end -->
-					</div>
+			<!--	</div>
 				</div>
 			</div>
-		</section>
+		</section>-->
 		<!-- ===========Testimonial End============ -->
 
 		
 		
 		<!-- ===========Contact Start============ -->
+		<!-- <section class="map" id="maps">
 		<div class="contact__area pt__330 pb__100">
 			<div id="map_contact" style="text-align: center; padding: 5px;">
 					<iframe style="margin:auto;padding: 0%;" width="1000" height="400" frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=1000&cp=19.2085~73.09129999999998&lvl=11&typ=d&sty=h&src=SHELL&FORM=MBEDV8" scrolling="no" allowfullscreen>
 					</iframe>
 			</div>
-			<div id="contact">
+		</section>
+		 -->
+			
+		 <div id="contact">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-7 p__0">
@@ -943,37 +950,37 @@
 		</footer>
 		<!-- =========== Footer Area End ============ -->
 		<!-- jquery -->
-		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="{% static 'js/jquery-2.1.4.min.js '%}"></script>
 
 		<!-- bootstrap js -->
-		<script src="js/bootstrap.min.js"></script>
+		<script src="{% static 'js/bootstrap.min.js'%}"></script>
 
 		<!-- counter js -->
-		<script type="text/javascript" src="js/jquery.tm.counter.js"></script>
+		<script type="text/javascript" src="{% static 'js/jquery.tm.counter.js'%}"></script>
 
 		<!-- horizon js -->
-		<script type="text/javascript" src="js/jquery.tm.horizon.js"></script>
+		<script type="text/javascript" src="{% static 'js/jquery.tm.horizon.js'%}"></script>
 
 		<!-- jquery parallax js -->
-		<script src="js/jquery.parallax-1.1.3.js"></script>
+		<script src="{% static 'js/jquery.parallax-1.1.3.js'%}"></script>
 
 		<!-- Tilt js -->
-		<script src="js/tilt.jquery.min.js"></script>
+		<script src="{% static 'js/tilt.jquery.min.js'%}"></script>
 
 		<!-- Flickity js -->
-		<script src="js/flickity.pkgd.min.js"></script>
+		<script src="{% static 'js/flickity.pkgd.min.js'%}"></script>
 
 		<!-- venobox js -->
-		<script src="js/venobox.min.js"></script>
+		<script src="{% static 'js/venobox.min.js'%}"></script>
 
 		<!-- image loaded js -->
-		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="{% static 'js/imagesloaded.pkgd.min.js'%}"></script>
 
 		<!-- isotop js -->
-		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="{% static 'js/isotope.pkgd.min.js'%}"></script>
 
 		<!-- Nav js -->
-		<script src="js/navigation.js"></script>
+		<script src="{% static 'js/navigation.js '%}"></script>
 
 		<!-- google map js -->
 		<!-- Replace test API Key "AIzaSyC6iKLVzr34W23jAZDT3HlrElOHfK6IH_w" with your own one below 
@@ -981,23 +988,23 @@
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6iKLVzr34W23jAZDT3HlrElOHfK6IH_w"></script>
 
 		<!-- main js -->
-		<script src="js/activation.js"></script>
+		<script src="{% static 'js/activation.js' %}"></script>
 
 		<!-- revolution js -->
-		<script type="text/javascript" src="js/slider-rev.js"></script>
-		<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-		<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="{% static 'js/slider-rev.js'%}"></script>
+		<script type="text/javascript" src="{% static 'revolution/js/jquery.themepunch.tools.min.js'%}"></script>
+		<script type="text/javascript" src="{% static 'revolution/js/jquery.themepunch.revolution.min.js'%}"></script>
 
 		<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-		<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+		<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.actions.min.js'%}"></script>
+		<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.carousel.min.js '%}"></script>
+		<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.kenburn.min.js '%}"></script>
+		<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.layeranimation.min.js '%}"></script>
+		<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.migration.min.js '%}"></script>
+		<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.navigation.min.js '%}"></script>
+		<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.parallax.min.js '%}"></script>
+		<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.slideanims.min.js '%}"></script>
+		<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.video.min.js '%}"></script>
 
 	</div>
 </body>
