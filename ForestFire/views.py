@@ -10,7 +10,7 @@ import json
 #Home view
 
 def home(request):
-    # createGeoJSON()
+    #createGeoJSON()
     return render(request,'homepage.html')
 
 def render_map(request):
@@ -24,13 +24,13 @@ def createGeoJSON():
 
     data_json = list()
     counter = 1
-    initial_date = dt.datetime(2021, 2, 1)
+    initial_date = dt.datetime(2020, 2, 2)
     for a, b in zip(lat_data, long_data):
         # print(counter)
         if counter % 5 == 0:
             # Ibcrease datetime
             initial_date = initial_date + dt.timedelta(days=1)
-        if counter == 1000:
+        if counter == 3000:
             break
         data_json.append(
             {

@@ -182,10 +182,10 @@
 	$(function () {
 		$(".slider-range").slider({
 			range: true,
-			min: new Date('2021.02.01').getTime() / 1000,
-			max: new Date('2021.12.31').getTime() / 1000,
+			min: new Date('2020.02.02').getTime() / 1000,
+			max: new Date('2022.12.31').getTime() / 1000,
 			step: 86400,
-			values: [new Date('2021.02.01').getTime() / 1000, new Date('2021.02.02').getTime() / 1000],
+			values: [new Date('2020.02.02').getTime() / 1000, new Date('2020.04.09').getTime() / 1000],
 			slide: function (event, ui) {
 				$("#amount").val((new Date(ui.values[0] * 1000).toDateString()) + " - " + (new Date(ui.values[1] * 1000)).toDateString());
 				filterBy(ui.values[0],ui.values[1])
