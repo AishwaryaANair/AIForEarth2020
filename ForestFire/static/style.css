@@ -889,7 +889,7 @@ service V2
 }
 .v2 .counter__wrapper span {
     font-size: 18px;
-    color: #888;
+    color: rgb(105, 104, 104);
 }
 /*
 ************************************************
