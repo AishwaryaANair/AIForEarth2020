@@ -881,6 +881,7 @@ service V2
     -ms-flex-align: center;
     align-items: center;
     padding-bottom: 10px;
+    color:#cac4b7;
 }
 .v2 .counter__wrapper h3 {
     font-size: 32px;
