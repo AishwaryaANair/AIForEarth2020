@@ -777,6 +777,10 @@ header.sticky-header #navigation5 .nav-menu > li> a:after {
 }
 .about_title p {
     padding-bottom: 50px;
+    color: #5ca30a;
+}
+.about_title.text-left.horizon p {
+    color: #5ca30a;
 }
 .about__btn {
     border: 2px solid;
